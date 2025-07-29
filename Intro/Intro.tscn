@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://1krc8xvuswxp"]
+
+[ext_resource type="Script" uid="uid://df45eql86e5pf" path="res://Intro/Intro.gd" id="1_k2o5b"]
+[ext_resource type="VideoStream" uid="uid://b5rg3ftk0pb45" path="res://Intro/FurizAlexSplashScreen.ogv" id="1_x3b8t"]
+
+[node name="Intro" type="CanvasLayer"]
+script = ExtResource("1_k2o5b")
+
+[node name="Cont" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Cont"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.05176e-05
+offset_top = -1.52588e-05
+offset_right = 768.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("1_x3b8t")
+autoplay = true
