@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@export_file(".tscn") var scene : String
+@export_file("*tscn") var scene : String
 
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
